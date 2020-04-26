@@ -8,13 +8,13 @@ import { Component, OnInit, Input, OnDestroy } from '@angular/core';
 export class AudioElementComponent implements OnInit, OnDestroy {
 
   constructor() { }
-  @Input() audio_path;
+  @Input() audio_src;
 
   audioObj: any;
   ngOnInit(): void {
     console.log('hello');
     this.audioObj = new Audio();
-    this.audioObj.src = `app/media/${this.audio_path}`;
+    this.audioObj.src = `app/media/${this.audio_src}`;
     this.audioObj.load();
 
   }

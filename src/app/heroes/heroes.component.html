@@ -16,8 +16,8 @@
       <input [(ngModel)]="selectedHero.name" placeholder="name"/>
     </label>
   </div>
-  <div>
-    <app-audio-element [audio_path]="selectedHero.song_path"></app-audio-element>
+  <div *ngIf="selectedHero.song_path">
+    <app-audio-element [audio_src]="selectedHero.song_path"></app-audio-element>
   </div>
 
 </div>
