@@ -12,6 +12,7 @@ export class AudioElementComponent implements OnInit, OnDestroy {
 
   audioObj: any;
   ngOnInit(): void {
+    console.log('hello');
     this.audioObj = new Audio();
     this.audioObj.src = `app/media/${this.audio_path}`;
     this.audioObj.load();
