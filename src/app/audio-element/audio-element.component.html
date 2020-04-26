@@ -1,9 +1,8 @@
 <div class="audio-wrapper">
   <audio controls
     [ngSwitch]="audio_path.split('.').pop()"
-    id="{{audio_path}}.wrapper"
+    [(ngModel)]="audioObj"
     controlslist="nodownload noremoteplayback">
-
     <source *ngSwitchCase="'mp3'" src="app/media/{{audio_path}}" type="audio/mpeg">
     <source *ngSwitchCase="'ogg'" src="app/media/{{audio_path}}" type="audio/ogg">
     <div *ngSwitchDefault>Bad input file!</div>

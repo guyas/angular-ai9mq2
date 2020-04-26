@@ -4,11 +4,15 @@ import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { HeroesComponent } from './heroes/heroes.component';
+import { AudioElementComponent } from './audio-element/audio-element.component';
+import { Audio2ElementComponent } from './audio2-element/audio2-element.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent
+    HeroesComponent,
+    AudioElementComponent,
+    Audio2ElementComponent
   ],
   imports: [
     BrowserModule,
